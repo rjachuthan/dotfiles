@@ -1,0 +1,88 @@
+[global]
+  pseudo-transparency = false
+  include-file = ~/.config/polybar/modules.ini
+
+[colors]
+  bg = #80343a40
+  primary = #81A1C1
+  whitish = #FFFFFF
+  secondary = #5E81AC
+  redish = #BF616A
+  yellowish = #EBCB8B
+  greenish = #A3BE8C
+
+[fonts]
+  font-0 = "Fira Code:style=Regular:size=7;1"
+  font-1 = "Font Awesome 5 Brands Regular:style=Regular:size=7;1"
+  font-2 = "Font Awesome 5 Free Solid:style=Solid:size=7;1"
+  font-3 = "Font Awesome 5 Free Regular:style=Regular:size=7;1"
+
+[commons]
+  height = 24
+  padding = 1
+  linesize = 1
+
+[bar/left]
+  width = 32%
+  line-size = ${commons.linesize}
+  height = ${commons.height}
+  padding = ${commons.padding}
+  offset-x = 10
+  offset-y = 5
+  background = ${colors.bg}
+  foreground = ${colors.whitish}
+  font-0 = ${fonts.font-0}
+  font-1 = ${fonts.font-1}
+  font-2 = ${fonts.font-2}
+  font-3 = ${fonts.font-3}
+  modules-left = i3
+  modules-right = memory cpu swap
+  module-margin = 1
+  override-redirect = true
+  wm-restack = i3
+
+
+[bar/middle]
+  width = 22%
+  line-size = ${commons.linesize}
+  height = ${commons.height}
+  padding = ${commons.padding}
+  offset-x = 39%
+  offset-y = 5
+  background = ${colors.bg}
+  foreground = ${colors.whitish}
+  font-0 = ${fonts.font-0}
+  font-1 = ${fonts.font-1}
+  font-2 = ${fonts.font-2}
+  font-3 = ${fonts.font-3}
+  wm-name = "polybar-middle"
+  wm-restack = i3
+  modules-center = music
+  override-redirect = true
+
+
+[bar/full]
+  wm-name = "polybar-full"
+  width = 98%:+11
+  line-size = ${commons.linesize}
+  height = ${commons.height}
+  padding = ${commons.padding}
+  offset-x = 10
+  offset-y = 5
+  module-margin = 1
+  background = ${colors.bg}
+  foreground = ${colors.whitish}
+  font-0 = ${fonts.font-0}
+  font-1 = ${fonts.font-1}
+  font-2 = ${fonts.font-2}
+  font-3 = ${fonts.font-3}
+  ; module-margin-right = 2
+  modules-left=i3
+  modules-center=date music time
+  modules-right=arch-updates memory cpu swap speedtest speedtest-upload pulseaudio battery
+  ; tray-offset-x = -10
+  ; tray-position= right
+  ; tray-background = ${colors.bg}
+  override-redirect = true
+  wm-restack = i3
+

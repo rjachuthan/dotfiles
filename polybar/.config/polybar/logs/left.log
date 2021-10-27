@@ -1,0 +1,13 @@
+polybar|notice:  Parsing config file: /home/rituraj/.config/polybar/config
+polybar|notice:  Loaded font "Fira Code:style=Regular:size=8" (name=Fira Code, offset=2, file=/usr/share/fonts/TTF/FiraCode-Regular.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Brands Regular:style=Regular:size=8" (name=Font Awesome 5 Brands, offset=2, file=/usr/share/fonts/TTF/fa-brands-400.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Solid:style=Solid:size=8" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/TTF/fa-solid-900.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Regular:style=Regular:size=8" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/TTF/fa-regular-400.ttf)
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/rituraj/.config/polybar/config
+polybar|notice:  Loaded font "Fira Code:style=Regular:size=8" (name=Fira Code, offset=2, file=/usr/share/fonts/TTF/FiraCode-Regular.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Brands Regular:style=Regular:size=8" (name=Font Awesome 5 Brands, offset=2, file=/usr/share/fonts/TTF/fa-brands-400.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Solid:style=Solid:size=8" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/TTF/fa-solid-900.ttf)
+polybar|notice:  Loaded font "Font Awesome 5 Free Regular:style=Regular:size=8" (name=Font Awesome 5 Free, offset=2, file=/usr/share/fonts/TTF/fa-regular-400.ttf)
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
