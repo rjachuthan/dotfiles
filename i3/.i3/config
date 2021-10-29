@@ -51,6 +51,8 @@ bindsym $mod+c            exec dunstctl close-all
 bindsym $mod+shift+c      reload
 
 bindsym $mod+d            exec ~/.config/rofi/launchers/misc/launcher.sh
+bindsym $mod+shift+d      exec ~/Codes/scripts/onlyHDMIdisplay.sh
+bindsym $mod+Ctrl+d       exec ~/Codes/scripts/onlyLaptopDisplay.sh
 
 bindsym $mod+e            layout toggle split
 bindsym $mod+Shift+e      exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
