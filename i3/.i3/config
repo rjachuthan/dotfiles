@@ -396,7 +396,7 @@ client.background       $bg
 # Set inner/outer gaps
 gaps inner 5
 gaps outer 5
-gaps top 35
+gaps top 30
 
 title_align center
 
