@@ -97,6 +97,8 @@ alias obfood="mv ~/Downloads/Markdown/* ~/Documents/ZettelNotes/05\ Clippings/Fo
 alias zet="cd ~/Documents/ZettelNotes;git status"
 alias hn="hackernews_tui --config ~/.config/hn-tui.toml"
 
+alias anime="sh ~/Codes/GH_Projects/ani-cli/ani-cli"
+
 alias clearswap="sudo swapoff -a && sudo swapon -a"
 alias clearsystem="~/scripts/system-maintenance.sh"
 
