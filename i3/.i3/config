@@ -199,7 +199,7 @@ assign [class="whatsapp-nativefier-d52542"] $ws4
 
 # Open specific applications in       floating mode
 for_window [class="feh"]              floating enable sticky enable border normal
-for_window [class="mpv"]              floating enable
+# for_window [class="mpv"]            floating enable
 for_window [class="qt5ct"]            floating enable sticky enable border normal
 for_window [class="octopi"]           floating enable
 for_window [class="Xfburn"]           floating enable
@@ -208,7 +208,7 @@ for_window [class="GParted"]          floating enable border normal
 for_window [title="i3_help"]          floating enable sticky enable border normal
 for_window [class="Clipgrab"]         floating enable
 for_window [class="Nitrogen"]         floating enable sticky enable border normal
-# for_window [class="Alacritty"]        floating enable
+# for_window [class="Alacritty"]      floating enable
 for_window [title="alsamixer"]        floating enable border pixel 1
 for_window [class="calamares"]        floating enable border normal
 for_window [class="Galculator"]       floating enable border pixel 1
@@ -285,7 +285,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id xrandr --output eDP-1 --gamma 0.8:0.8:1.1
 exec --no-startup-id syncthing
-exec_always --no-startup-id picom
+# exec_always --no-startup-id picom
 exec --no-startup-id wal -R
 exec --no-startup-id ~/Applications/Obsidian-0.9.3_0ef8053e38f8a7467cfa400bcd682297.AppImage
 exec --no-startup-id ~/.config/polybar/launch.sh
