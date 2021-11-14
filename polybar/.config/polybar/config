@@ -79,7 +79,8 @@
   ; module-margin-right = 2
   modules-left=i3
   modules-center=date music time
-  modules-right=arch-updates memory cpu swap speedtest speedtest-upload pulseaudio battery
+  ; modules-right=arch-updates memory cpu swap speedtest speedtest-upload pulseaudio battery
+  modules-right=arch-updates memory cpu speedtest pulseaudio battery
   ; tray-offset-x = -10
   ; tray-position= right
   ; tray-background = ${colors.bg}
