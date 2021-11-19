@@ -16,4 +16,4 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 # polybar middle 2>~/.config/polybar/logs/middle.log &
 # polybar right 2>~/.config/polybar/logs/right.log &
 # ~/.config/polybar/music_bar.py 2>~/.config/polybar/logs/music.log &
-polybar full 2>~/.config/polybar/logs/full.log
+polybar -c ~/.config/polybar/config.ini full 2>~/.config/polybar/logs/full.log
