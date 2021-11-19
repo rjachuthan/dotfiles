@@ -95,7 +95,7 @@ bindsym $mod+t            exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t       exec --no-startup-id picom -b
 bindsym $mod+Mod1+t       exec --no-startup-id "killall polybar; sh ~/.config/polybar/launch.sh"
 
-bindsym $mod+v            exec --no-startup-id rofi -theme ~/.config/rofi.old/doom-one.rasi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+# bindsym $mod+v            exec --no-startup-id rofi -theme ~/.config/rofi.old/doom-one.rasi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 bindsym $mod+w            layout tabbed
 bindsym $mod+Ctrl+w       exec "${HOME}/Codes/GH_Projects/rofi-wifi-menu/rofi-wifi-menu.sh"
