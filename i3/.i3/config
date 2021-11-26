@@ -81,6 +81,7 @@ bindsym $mod+n            border normal
 bindsym $mod+Ctrl+o       exec --no-startup-id ~/Applications/Obsidian-0.9.3_0ef8053e38f8a7467cfa400bcd682297.AppImage
 
 bindsym $mod+p            exec --no-startup-id ~/.config/rofi/applets/android/powermenu.sh
+bindsym $mod+Shift+p      exec --no-startup-id ~/Codes/scripts/lofi.sh
 
 bindsym $mod+q            split toggle
 bindsym $mod+Shift+q      kill
@@ -199,8 +200,9 @@ assign [class="whatsapp-nativefier-d52542"] $ws4
 
 # Open specific applications in       floating mode
 for_window [class="feh"]              floating enable sticky enable border normal
-# for_window [class="mpv"]            floating enable
+for_window [class="mpv"]              floating enable
 for_window [class="qt5ct"]            floating enable sticky enable border normal
+for_window [class="ffplay"]           floating enable
 for_window [class="octopi"]           floating enable
 for_window [class="Xfburn"]           floating enable
 for_window [class="fpakman"]          floating enable
