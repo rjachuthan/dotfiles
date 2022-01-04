@@ -3,7 +3,7 @@
   include-file = ~/.config/polybar/modules.ini
 
 [colors]
-  bg = #80343a40
+  bg = #95343a40
   primary = #81A1C1
   whitish = #FFFFFF
   secondary = #5E81AC
