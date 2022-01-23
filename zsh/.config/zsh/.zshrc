@@ -71,7 +71,7 @@ bindkey '^j' down-line-or-beginning-search
 
 
 # Executable Paths
-export EDITOR="lvim"
+export EDITOR="nvim"
 export PATH=$PATH:~/scripts
 export PATH=$PATH:~/.emacs.d/bin
 export PATH=$PATH:~/.miniconda/bin
@@ -79,7 +79,7 @@ export PATH=$PATH:~/.miniconda/bin
 
 
 # Aliases
-alias vim="lvim"
+alias vim="nvim"
 export ZSHPATH="~/.config/zsh/.zshrc"
 
 alias ei3="$EDITOR ~/.i3/config"
