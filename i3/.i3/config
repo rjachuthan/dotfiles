@@ -33,7 +33,7 @@ bindsym $mod+Return       exec i3-sensible-terminal
 bindsym $mod+F3           exec pcmanfm
 bindsym $mod+Shift+F3     exec pcmanfm_pk exec
 
-bindsym $mod+F4           exec i3-sensible-terminal -e lf
+bindsym $mod+F4           exec i3-sensible-terminal -e lfrun
 
 bindsym $mod+F5           exec i3-sensible-terminal -e 'mocp'
 
