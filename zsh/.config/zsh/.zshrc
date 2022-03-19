@@ -75,6 +75,7 @@ export EDITOR="nvim"
 export PATH=$PATH:~/scripts
 export PATH=$PATH:~/.emacs.d/bin
 export PATH=$PATH:~/.miniconda/bin
+export PATH=$PATH:/usr/local/go/bin
 
 
 
@@ -98,6 +99,7 @@ alias zet="cd ~/Documents/ZettelNotes;git status"
 alias hn="hackernews_tui --config ~/.config/hn-tui.toml"
 
 alias anime="sh ~/Codes/GH_Projects/ani-cli/ani-cli"
+alias lf=lfrun
 
 alias clearswap="sudo swapoff -a && sudo swapon -a"
 alias clearsystem="~/scripts/system-maintenance.sh"
