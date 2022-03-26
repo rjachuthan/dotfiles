@@ -122,8 +122,8 @@ map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C
 # Set Wallpaper
 cmd setBackground ${{
     set -f
-    wal -i $f
     cp $f ~/.config/wallpaper.png
+    wal -i $f
     feh --bg-fill $f
   }}
 
@@ -134,3 +134,5 @@ map gw cd ~/Pictures/wallpapers
 map gd cd ~/Downloads
 map gD cd ~/Documents
 map gb cd ~/Documents/Books
+map gc cd ~/Codes/DotFiles
+map gC cd ~/.config
