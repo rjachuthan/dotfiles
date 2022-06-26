@@ -12,7 +12,7 @@
 # ribbon_left		ribbon_left_round		ribbon_right		ribbon_right_round
 # full_bottom		full_top				full_left			full_right
 
-theme="full_left"
+theme="ribbon_top_round"
 
 dir="$HOME/.config/rofi/launchers/ribbon"
 styles=($(ls -p --hide="colors.rasi" $dir/styles))
