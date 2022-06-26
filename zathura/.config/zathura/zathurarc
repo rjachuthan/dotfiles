@@ -95,4 +95,4 @@ map [fullscreen] <C-o> jumplist backward
 map [fullscreen] <C-i> jumplist forward
 
 map [index] q quit
-
+map <C-i> recolor
