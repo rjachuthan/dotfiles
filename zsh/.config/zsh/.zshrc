@@ -32,6 +32,11 @@ PROMPTS=(
 # ignition=${PROMPTS[$RANDOM % ${#RANDOM[*]}+1]}
 PROMPT='%F{yellow}%1~%f %F{green} %f '
 
+# Swallow Windows
+alias z="swallow zathura"
+alias mpv="swallow mpv"
+alias stream="swallow streamlink --player=mpv --player-args='--speed=1.7'"
+
 ## Git Settings
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
@@ -40,6 +45,12 @@ setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{yellow}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
+
+# Git alias
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
 
 # Completion
 autoload -Uz compinit && compinit #need the next two lines for case insensitive tab completion
@@ -59,6 +70,8 @@ zle -N down-line-or-beginning-search
 autoload -Uz colors && colors
 
 
+compinit -d "$XDG_CACHE_HOME"/zsh/zxompdump-"$ZSH_VERSION"
+
 
 # Keybindings
 bindkey -v # vi-mode
@@ -72,8 +85,7 @@ bindkey '^j' down-line-or-beginning-search
 
 # Executable Paths
 export EDITOR="nvim"
-export PATH=$PATH:~/scripts
-export PATH=$PATH:~/.emacs.d/bin
+export PATH=$PATH:~/Codes/scripts
 export PATH=$PATH:~/.miniconda/bin
 export PATH=$PATH:/usr/local/go/bin
 
@@ -97,6 +109,7 @@ alias obclip="mv ~/Downloads/Markdown/* ~/Documents/ZettelNotes/05\ Clippings"
 alias obfood="mv ~/Downloads/Markdown/* ~/Documents/ZettelNotes/05\ Clippings/Food"
 alias zet="cd ~/Documents/ZettelNotes;git status"
 alias hn="hackernews_tui --config ~/.config/hn-tui.toml"
+alias y="youtube"
 
 alias anime="sh ~/Codes/GH_Projects/ani-cli/ani-cli"
 alias lf=lfrun
@@ -109,6 +122,12 @@ alias cp="cp -i"
 # alias mv="mv -i"
 # alias rm="rm -i"
 
+
+# Moved WeeChat home dir from ~/.profile file
+alias weechat=weechat -d ${XDG_CONFIG_HOME}/weechat
+
+# Moved Config from home to config folder
+alias svn="svn --config-dir $XDG_CONFIG_HOME/subversion"
 
 
 
