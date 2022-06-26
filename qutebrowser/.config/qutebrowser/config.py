@@ -223,7 +223,7 @@ c.url.searchengines = {
         'y': 'http://www.youtube.com/results?search_query={}',
         'g': 'https://google.com/search?q={}',
         'gdr': 'https://www.goodreads.com/search?q={}',
-        'gen': 'http://libgen.li/search.php?req={}',
+        'gen': 'http://libgen.rs/search.php?req={}',
     }
 
 # Default zoom level.
@@ -245,7 +245,7 @@ config.bind(',y', 'hint links spawn --detach yt-dlp "{url}"')
 
 config.bind(',s', "config-source")
 
-config.bind('M', 'hint links spawn ~/scripts/youtube "{hint-url}"')
+config.bind('M', 'hint links spawn ~/Codes/scripts/youtube "{hint-url}"')
 config.bind('Z', 'hint links spawn alacrity -e youtube-dl {hint-url}')
 config.bind('t', 'set-cmd-text -s :open -t')
 config.bind('PB', 'hint links run open -p {hint-url}')
