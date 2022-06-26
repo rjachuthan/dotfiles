@@ -44,13 +44,13 @@ bindsym $mod+F11          exec playerctl next
 # Focus the parent container
 bindsym $mod+a            focus parent
 
-bindsym $mod+b            exec "${HOME}/scripts/dmenu-books"
+bindsym $mod+b            exec "${HOME}/Codes/scripts/dmenu-books"
 bindsym $mod+Ctrl+b       exec --no-startup-id brave
 
 bindsym $mod+c            exec dunstctl close-all
 bindsym $mod+shift+c      reload
 
-bindsym $mod+d            exec ~/.config/rofi/launchers/misc/launcher.sh
+bindsym $mod+d            exec ~/.config/rofi/launchers/slate/launcher.sh
 bindsym $mod+shift+d      exec ~/Codes/scripts/onlyHDMIdisplay.sh
 bindsym $mod+Ctrl+d       exec ~/Codes/scripts/onlyLaptopDisplay.sh
 
@@ -58,7 +58,7 @@ bindsym $mod+e            layout toggle split
 bindsym $mod+Shift+e      exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+f            fullscreen toggle           
-bindsym $mod+Ctrl+f       exec --no-startup-id librewolf
+bindsym $mod+Ctrl+f       exec --no-startup-id firefox
 
 bindsym $mod+h            focus left
 bindsym $mod+Shift+h      move left
@@ -78,7 +78,7 @@ bindsym $mod+Ctrl+m       exec terminal -e 'alsamixer'
 
 bindsym $mod+n            border normal
 
-bindsym $mod+Ctrl+o       exec --no-startup-id ~/Applications/Obsidian-0.9.3_0ef8053e38f8a7467cfa400bcd682297.AppImage
+bindsym $mod+Ctrl+o       exec --no-startup-id ~/Applications/Obsidian-0.14.6_fb2d8b69f44aa8fdb2d85e32d1472343.AppImage
 
 bindsym $mod+p            exec --no-startup-id ~/.config/rofi/applets/android/powermenu.sh
 # bindsym $mod+Shift+p      exec --no-startup-id ~/Codes/scripts/lofi.sh
@@ -290,7 +290,7 @@ exec --no-startup-id xrandr --output eDP-1 --gamma 0.8:0.8:1.1
 exec --no-startup-id syncthing
 # exec_always --no-startup-id picom
 exec --no-startup-id wal -R
-exec --no-startup-id ~/Applications/Obsidian-0.9.3_0ef8053e38f8a7467cfa400bcd682297.AppImage
+exec --no-startup-id ~/Applications/Obsidian-0.14.6_fb2d8b69f44aa8fdb2d85e32d1472343.AppImage
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id greenclip daemon
 exec --no-startup-id betterlockscreen -w dim
