@@ -124,7 +124,7 @@ cmd setBackground ${{
     set -f
     cp $f ~/.config/wallpaper.png
     wal -i $f
-    feh --bg-fill $f
+    feh --bg-fill --no-fehbg $f
   }}
 
 # Mappings
