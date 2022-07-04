@@ -78,13 +78,15 @@ bindsym $mod+Ctrl+m       exec terminal -e 'alsamixer'
 
 bindsym $mod+n            border normal
 
-bindsym $mod+Ctrl+o       exec --no-startup-id ~/Applications/Obsidian-0.14.6_fb2d8b69f44aa8fdb2d85e32d1472343.AppImage
+bindsym $mod+Shift+o      exec --no-startup-id ~/Applications/Obsidian-0.14.6_fb2d8b69f44aa8fdb2d85e32d1472343.AppImage
+bindsym $mod+Ctrl+o       exec --no-startup-id jumpapp obsidian
 
 bindsym $mod+p            exec --no-startup-id ~/.config/rofi/applets/android/powermenu.sh
 # bindsym $mod+Shift+p      exec --no-startup-id ~/Codes/scripts/lofi.sh
 bindsym $mod+Shift+p      exec --no-startup-id ~/Codes/scripts/mpvClassicalRadio.sh
 
 bindsym $mod+q            split toggle
+bindsym $mod+Ctrl+q       exec --no-startup-id jumpapp qutebrowser
 bindsym $mod+Shift+q      kill
 
 bindsym $mod+r mode       "resize"
@@ -100,7 +102,8 @@ bindsym $mod+Mod1+t       exec --no-startup-id "killall polybar; sh ~/.config/po
 # bindsym $mod+v            exec --no-startup-id rofi -theme ~/.config/rofi.old/doom-one.rasi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 bindsym $mod+w            layout tabbed
-bindsym $mod+Ctrl+w       exec "${HOME}/Codes/GH_Projects/rofi-wifi-menu/rofi-wifi-menu.sh"
+bindsym $mod+Mod1+w       exec "${HOME}/Codes/GH_Projects/rofi-wifi-menu/rofi-wifi-menu.sh"
+bindsym $mod+Ctrl+w       exec jumpapp firefox
 # bindsym $mod+Shift+w      exec --no-startup-id "i3-scratchpad -tmr -acr -d 40%x90% whatsapp-nativefier-dark"
 
 bindsym $mod+Ctrl+x       -- release exec -- no-startup-id xkill
