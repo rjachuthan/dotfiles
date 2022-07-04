@@ -1,6 +1,6 @@
 export XDG_DATA_HOME=~/.local/share/
 export XDG_CONFIG_HOME=~/.config/
-XDG_CACHE_HOME=~/.cache/
+export XDG_CACHE_HOME=~/.cache
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"

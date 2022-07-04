@@ -36,6 +36,7 @@ PROMPT='%F{yellow}%1~%f %F{green} %f '
 alias z="swallow zathura"
 alias mpv="swallow mpv"
 alias stream="swallow streamlink --player=mpv --player-args='--speed=1.7'"
+alias y="youtube"
 
 ## Git Settings
 autoload -Uz vcs_info
@@ -89,11 +90,14 @@ export PATH=$PATH:~/Codes/scripts
 export PATH=$PATH:~/.miniconda/bin
 export PATH=$PATH:/usr/local/go/bin
 
-
+# Setting up Paths
+export ZSHPATH="~/.config/zsh/.zshrc"
+export XDG_DATA_HOME=~/.local/share/
+export XDG_CONFIG_HOME=~/.config/
+export XDG_CACHE_HOME=~/.cache
 
 # Aliases
 alias vim="nvim"
-export ZSHPATH="~/.config/zsh/.zshrc"
 
 alias ei3="$EDITOR ~/.i3/config"
 alias equte="$EDITOR ~/.config/qutebrowser/config.py"
@@ -111,7 +115,7 @@ alias zet="cd ~/Documents/ZettelNotes;git status"
 alias hn="hackernews_tui --config ~/.config/hn-tui.toml"
 alias y="youtube"
 
-alias anime="sh ~/Codes/GH_Projects/ani-cli/ani-cli"
+alias anime="sh ~/Codes/GH_Projects/ani-cli/bin/ani-cli"
 alias lf=lfrun
 
 alias clearswap="sudo swapoff -a && sudo swapon -a"
