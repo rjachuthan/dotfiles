@@ -25,7 +25,7 @@
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
     # format = "<span><big><b>%a</b></big>\n%b</span> %p\n\n<small><i>%s</i></small>"
-    format = "<span><b>%s %p</b></span>\n%b\n\n%a"
+    format = "<span><b><big>%s</big> %p</b></span>\n%b\n\n%a"
     # format = "<span><b>%s %p</b></span>\n%b\n\n%a\n%I"
     
     # Sort messages by urgency.
@@ -192,7 +192,6 @@
     background = "#343a40"
     foreground = "#ffffff"
     timeout = 5
-    new_icon = xfce4-notifyd
 
 [urgency_critical]
     background = "#ffa69e"
