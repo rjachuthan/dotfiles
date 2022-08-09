@@ -115,7 +115,7 @@ alias zet="cd ~/Documents/ZettelNotes;git status"
 alias hn="hackernews_tui --config ~/.config/hn-tui.toml"
 alias y="youtube"
 
-alias anime="sh ~/Codes/GH_Projects/ani-cli/bin/ani-cli"
+alias anime="sh ~/Codes/GH_Projects/ani-cli/ani-cli"
 alias lf=lfrun
 
 alias clearswap="sudo swapoff -a && sudo swapon -a"
