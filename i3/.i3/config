@@ -58,7 +58,7 @@ bindsym $mod+e            layout toggle split
 bindsym $mod+Shift+e      exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+f            fullscreen toggle           
-bindsym $mod+Ctrl+f       exec --no-startup-id firefox
+bindsym $mod+Ctrl+f       exec jumpapp librewolf
 
 bindsym $mod+h            focus left
 bindsym $mod+Shift+h      move left
@@ -68,13 +68,13 @@ bindsym $mod+Shift+j      move down
 
 bindsym $mod+k            focus up
 bindsym $mod+Shift+k      move up
+bindsym $mod+Ctrl+k       exec jumpapp kitty
 
 bindsym $mod+l            focus right
 bindsym $mod+Shift+l      move right
 
 bindsym $mod+m            bar mode toggle
-bindsym $mod+Shift+m      exec spotify
-bindsym $mod+Ctrl+m       exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m      exec jumpapp mpv
 
 bindsym $mod+n            border normal
 
@@ -99,12 +99,14 @@ bindsym $mod+t            exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t       exec --no-startup-id picom -b
 bindsym $mod+Mod1+t       exec --no-startup-id "killall polybar; sh ~/.config/polybar/launch.sh"
 
+bindsym $mod+u            [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+
 # bindsym $mod+v            exec --no-startup-id rofi -theme ~/.config/rofi.old/doom-one.rasi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 bindsym $mod+w            layout tabbed
 bindsym $mod+Mod1+w       exec "${HOME}/Codes/GH_Projects/rofi-wifi-menu/rofi-wifi-menu.sh"
-bindsym $mod+Ctrl+w       exec jumpapp firefox
 # bindsym $mod+Shift+w      exec --no-startup-id "i3-scratchpad -tmr -acr -d 40%x90% whatsapp-nativefier-dark"
+bindsym $mod+Ctrl+w       exec --no-startup-id jumpapp whatsapp-nativefier-dark
 
 bindsym $mod+Ctrl+x       -- release exec -- no-startup-id xkill
 
@@ -278,27 +280,34 @@ bindsym $mod+9 exec --no-startup-id betterlockscreen -l dim
 # Autostart applications
 # =========================================================================
 
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
+# exec --no-startup-id pamac-tray
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec --no-startup-id xrandr --output eDP-1 --gamma 0.8:0.8:1.1
+# exec --no-startup-id xrandr --output eDP-1 --gamma 0.8:0.8:1.1
 exec --no-startup-id syncthing
 # exec_always --no-startup-id picom
-exec --no-startup-id wal -R
 exec --no-startup-id ~/Applications/Obsidian-0.14.6_fb2d8b69f44aa8fdb2d85e32d1472343.AppImage
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id greenclip daemon
+# exec --no-startup-id greenclip daemon
 exec --no-startup-id betterlockscreen -w dim
 exec --no-startup-id source ~/.fehbg
-exec --no-startup-id mailspring -b
+# exec --no-startup-id mailspring -b
+exec --no-startup-id wal -R
+
+# #--------- Dropdown/Scratchpad ---------#
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 900 700
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 4 
+exec --no-startup-id kitty --name dropdown -e tmux
 
 
 # =========================================================================
