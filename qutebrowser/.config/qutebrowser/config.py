@@ -205,7 +205,7 @@ c.tabs.favicons.scale = 1.1
 c.tabs.indicator.padding = {"top": 0, "right": 0, "bottom": 0, "left": 0}
 c.tabs.indicator.width = 0
 c.tabs.padding = {"top": 2, "right": 2, "bottom": 2, "left": 2}
-c.tabs.width = 35
+c.tabs.width = 45
 
 
 c.url.open_base_url = True
@@ -279,9 +279,9 @@ c.scrolling.smooth = True
 c.editor.command = ["urxvt", "-e", "nvim", "{}"]
 
 # c.fonts.default_family = "sans-serif"
-c.fonts.default_size = "8pt"
-# c.fonts.contextmenu = 'Comic Sans MS'
-# c.fonts.default_family = 'Comic Sans MS'
+c.fonts.default_size = "10pt"
+c.fonts.contextmenu = 'JetBrains Mono'
+c.fonts.default_family = 'JetBrains Mono'
 
 
 
